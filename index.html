@@ -4,60 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>purple_PANDA</title>
 </head>
 <body>
+
+<!--load時の表示-->
+    <div class="load" id="load-page">
+        <img src="./img/purple PANDA(5).jpg" alt="" class="load-image">
+        <p class="load-comment">purple PANDAは、<br>Web制作のお手伝いをいたします。</p>
+    </div>
+
+<!--ヘッダー-->
     <div class="header">
         <div class="mainlogo">
             <a href="index.html" class="logo">purple PANDA</a>
         </div>
         <div class="mainmenu">
             <div class="menucontainer">
-                <a href="index.html" class="menu">about</a>
-                <a href="index.html" class="menu">product</a>
-                <a href="index.html" class="menu">service</a>
-                <a href="index.html" class="menu">contact</a>
+                <a href="#About" class="menu"><i class="fas fa-paw"></i>About</a>
+                <a href="#Service" class="menu"><i class="fas fa-paw"></i>Service</a>
+                <a href="#Product" class="menu"><i class="fas fa-paw"></i>Product</a>
+                <a href="#Contact" class="menu"><i class="fas fa-paw"></i>Contact</a>
+                <div class="hamberger" id="hamberger">
+                    <span class="hamberger-line" id="upper"></span>
+                    <span class="hamberger-line" id="center"></span>
+                    <span class="hamberger-line" id="lower"></span>
+                </div>
+            </div>
+            <div class="mobile-menu-container" id="hamberger-menu">
+                <a href="#About" class="mobile-menu"><i class="fas fa-paw"></i>About</a>
+                <a href="#Service" class="mobile-menu"><i class="fas fa-paw"></i>Service</a>
+                <a href="#Product" class="mobile-menu"><i class="fas fa-paw"></i>Product</a>
+                <a href="#Contact" class="mobile-menu"><i class="fas fa-paw"></i>Contact</a>
             </div>
         </div>
     </div>
 
-    <div class="topimage">
-        <a href="index.html" class="mainimage"></a>           
-    </div>
+<!--inner-->
+    <div class="inner">
+<!--About-->
+        <div class="item" id="About">
+            <p class="item-title">About</p>
+            <div class="about-content">
+                <a href="index.html" class="mainimage"><img src="./img/purple PANDA(5).jpg" alt=""></a>
+                <p class="introduction">インターネットを通じて、あなたのサービスやものづくりを世界に発信しませんか？ <br>
+                    私たちは、Web制作で、お客様の事業を応援します。</p>
+            </div>
+        </div>
 
-    <p>Product</p>
-    <div class="productitem">
-        <a href="index.html" class="productdetail">
-            <img src="purple PANDA(5).jpg" alt="">
-            <p>html&CSS</p>
-        </a>
-        <a href="index.html" class="productdetail">
-            <img src="purple PANDA(5).jpg" alt="">
-            <p>javascript</p>
-        </a>
-        <a href="index.html" class="productdetail">
-            <img src="purple PANDA(5).jpg" alt="">
-            <p>PHP</p>
-        </a>
-        <a href="index.html" class="productdetail">
-            <img src="purple PANDA(5).jpg" alt="">
-            <p>WordPress</p>
-        </a>
-    </div>
+<!--Service-->
+        <div class="item" id="Service">
+            <p class="item-title">Service</p>
+            <div class="service-content">
+                <div class="service-item">
+                    <p class="service-item-name">html</p>
+                    <i class="icon-html5"></i>
+                </div>
+                <div class="service-item">
+                    <p class="service-item-name">css</p>
+                    <i class="icon-css3"></i>
+                </div>
+                <div class="service-item">
+                    <p class="service-item-name">javascript</p>
+                    <i class="icon-javascript"></i>
+                </div>
+                <div class="service-item">
+                    <p class="service-item-name">php</p>
+                    <i class="icon-php"></i>
+                </div>
+            </div>
+        </div>
 
-    <p>About</p>
-    <div class="contact">
-        <img src="purple PANDA(5).jpg" alt="">
-        <div class="contactcontainer">
-            <div class="contactname">purple PANDA</div>
-            <div class="contactdetail">インターネットを通じて、あなたのサービスやものづくりを世界に発信しませんか？ <br>
-            私たちは、Web制作/Webデザインで、お客様の事業を応援します。 </div>
+<!--Product-->
+        <div class="item" id="Product">
+            <p class="item-title">Product</p>
+            <div class="product-content">
+                <div class="product-item">
+                    <p class="product-item-name">Web制作</p>
+                    <img class="product-item-img" src="./img/Portfolio1.jpg" alt="">
+                </div>
+                <div class="product-item">
+                    <p class="product-item-name">Webスクレイピング(準備中)</p>
+                    <img class="product-item-img" src="./img/purple PANDA(5).jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+<!--Contact-->
+        <div class="item" id="Contact">
+            <p class="item-title">Contact</p>
+            <div class="contact">
+                <div class="contact-name">purple PANDA</div>
+                <div class="contact-detail">クラウドワークス上でご連絡ください。</div>
+            </div>
         </div>
     </div>
+
+<!--フッター-->
     <div class="footer">
         <div class="copy">copyright purple PANDA</div>
         <a href="index.html" class="return">トップに戻る</a>
     </div>
+
+<!--TOPへ戻るボタン-->
+<div class="top-button" id="page_top_button">
+    <span class="top-button-comment">TOPへ</span>
+</div>
+
+<!--scriptタグ-->
+<script src="./js/main.js"></script>
+
 </body>
 </html>
